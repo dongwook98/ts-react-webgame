@@ -17,11 +17,15 @@ const GuGuDan = () => {
       setFirst(Math.ceil(Math.random() * 9));
       setSecond(Math.ceil(Math.random() * 9));
       setValue('');
-      input!.focus();
+      if (input) {
+        input.focus();
+      }
     } else {
       setResult('땡');
       setValue('');
-      input!.focus();
+      if (input) {
+        input.focus();
+      }
     }
   };
   return (
