@@ -36,6 +36,7 @@ const GuGuDan = () => {
       <form onSubmit={onSubmitForm}>
         <input ref={inputRef} type='number' value={value} onChange={(e) => setValue(e.target.value)} />
       </form>
+      <div>{result}</div>
     </>
   );
 };
